@@ -1,6 +1,6 @@
 # Lumen Computer Vision Laboratory
 
-A React 19 and Vite academic simulation based on the seven supplied CSST106 laboratory documents. Source documents remain unchanged in `../docs`.
+A React 19 and Vite academic simulation based on seven CSST106 laboratory exercises. The original course documents are maintained separately from this application.
 
 ## Run locally
 
@@ -58,6 +58,20 @@ The YOLO file is named YOLOV8 in the supplied docs but its body specifies YOLOv1
 
 ## Interface
 
-Responsive white and sage laboratory dashboard with a persistent experiment sidebar. The supplied Pinterest pin was inaccessible to both web fetching and the available browser connection, so visual fidelity to it could not be verified.
+The supplied InboxxHQ screenshot guides the interface: soft blue glass tiles, a full-screen warm-white hero, a bold centered headline, cobalt pill buttons, and floating interactive experiment previews. The hero spans the viewport edge to edge. The blue-and-white theme continues through the seven-lab workspace. The home page links to every experiment, the learning guide, and the existing local notebook.
+
+## Deploy to Vercel
+
+Import this GitHub repository into Vercel and use the following settings:
+
+| Setting | Value |
+| --- | --- |
+| Framework preset | Vite |
+| Root directory | Repository root (`./`) |
+| Build command | `npm run build` |
+| Output directory | `dist` |
+| Install command | `npm install` |
+
+No environment variables or backend services are needed for the browser simulation. The Python companion is a downloadable file and runs separately on your computer.
 
 Official references: [PCA](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html), [YOLO11](https://docs.ultralytics.com/models/yolo11/), [OpenCV](https://docs.opencv.org/4.x/).
